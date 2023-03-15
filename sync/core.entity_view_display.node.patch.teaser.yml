@@ -1,0 +1,32 @@
+uuid: ecc4faee-09bc-47d7-bb7a-6000038fb065
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.patch.body
+    - field.field.node.patch.field_patch_file
+    - node.type.patch
+  module:
+    - text
+    - user
+id: node.patch.teaser
+targetEntityType: node
+bundle: patch
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_patch_file: true
