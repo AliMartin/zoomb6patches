@@ -1,6 +1,6 @@
 {
     "name": "drupal/legacy-project",
-    "description": "Project template for Drupal projects with composer following drupal/drupal layout",
+    "description": "Project template for Drupal 9 projects with composer following drupal/drupal layout",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
@@ -15,14 +15,24 @@
         }
     ],
     "require": {
-        "composer/installers": "^2.0",
-        "drupal/admin_toolbar": "^3.3",
-        "drupal/backup_migrate": "^5.0",
-        "drupal/bootstrap5": "^3.0",
-        "drupal/core-composer-scaffold": "^10.0",
-        "drupal/core-project-message": "^10.0",
-        "drupal/core-recommended": "^10.0",
-        "drupal/core-vendor-hardening": "^10.0"
+        "composer/installers": "^1.9",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/backup_migrate": "^5.0@RC",
+        "drupal/better_exposed_filters": "^5.0",
+        "drupal/bootstrap5": "^1.1",
+        "drupal/captcha": "^1.2",
+        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/core-project-message": "^9.1",
+        "drupal/core-recommended": "^9.1",
+        "drupal/core-vendor-hardening": "^9.1",
+        "drupal/ctools": "^3.6",
+        "drupal/google_analytics": "^3.1",
+        "drupal/honeypot": "^2.0",
+        "drupal/pathauto": "^1.8",
+        "drupal/recaptcha": "^3.0",
+        "drupal/responsive_menu": "^4.4",
+        "drupal/token": "^1.9",
+        "drupal/webform": "^6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -30,15 +40,13 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "drupal/core-vendor-hardening": true,
-            "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        },
-        "sort-packages": true
+            "drupal/core-vendor-hardening": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
@@ -87,7 +95,7 @@
                 "<bg=blue;fg=white>                                                         </>",
                 "",
                 "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/installing-drupal",
+                "  * Install the site: https://www.drupal.org/docs/8/install",
                 "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
                 "  * Get support: https://www.drupal.org/support",
                 "  * Get involved with the Drupal community:",
@@ -96,5 +104,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drush/drush": "^11.0"
     }
 }
