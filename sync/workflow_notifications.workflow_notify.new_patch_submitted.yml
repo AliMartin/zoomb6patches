@@ -1,0 +1,21 @@
+uuid: 7c2fb6d9-e77b-412c-8699-c3e0b219ee82
+langcode: en
+status: true
+dependencies: {  }
+id: new_patch_submitted
+label: 'New patch submitted'
+wid: patches
+from_sid: patches_creation
+to_sid: patches_unpublished
+when_to_trigger: on_state_change
+days: 0
+roles:
+  workflow_author: '0'
+  authenticated: '0'
+  content_editor: '0'
+  administrator: '0'
+mail_ids: ali@alimartin.com
+subject: 'New patch submitted'
+message:
+  value: '<p>New patch submitted</p>'
+  format: basic_html

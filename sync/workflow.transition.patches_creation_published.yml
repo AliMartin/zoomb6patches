@@ -1,0 +1,18 @@
+uuid: 142dadc6-25a5-42dc-9291-01c5ea1fde9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.patches_creation
+    - workflow.state.patches_published
+id: patches_creation_published
+label: null
+module: workflow
+from_sid: patches_creation
+to_sid: patches_published
+roles:
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
+  content_editor: '0'
+  administrator: '0'

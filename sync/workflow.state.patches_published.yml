@@ -1,0 +1,12 @@
+uuid: cff532aa-6d15-4bad-9421-ee1d62ec0bb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.workflow.patches
+id: patches_published
+label: Published
+module: workflow
+wid: patches
+weight: -8
+sysid: 0

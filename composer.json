@@ -31,7 +31,8 @@
         "drupal/recaptcha": "^3.0",
         "drupal/responsive_menu": "^4.4",
         "drupal/token": "^1.9",
-        "drupal/webform": "^6.0"
+        "drupal/webform": "^6.0",
+        "drupal/workflow_notifications": "^3.0@beta"
     },
     "conflict": {
         "drupal/drupal": "*"

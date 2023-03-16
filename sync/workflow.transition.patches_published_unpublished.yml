@@ -1,0 +1,18 @@
+uuid: d1d321a8-ad35-4157-bd53-0de04dcecb45
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflow.state.patches_published
+    - workflow.state.patches_unpublished
+id: patches_published_unpublished
+label: null
+module: workflow
+from_sid: patches_published
+to_sid: patches_unpublished
+roles:
+  content_editor: content_editor
+  administrator: administrator
+  workflow_author: '0'
+  anonymous: '0'
+  authenticated: '0'
