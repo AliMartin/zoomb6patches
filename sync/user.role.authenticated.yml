@@ -12,7 +12,6 @@ dependencies:
     - search
     - shortcut
     - system
-    - workflow
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
@@ -29,4 +28,3 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view media'
-  - 'create patches workflow_transition'

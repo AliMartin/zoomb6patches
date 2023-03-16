@@ -31,14 +31,14 @@
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.0",
         "drupal/responsive_menu": "^4.4",
+        "drupal/rules": "3.x-dev@dev",
         "drupal/token": "^1.9",
-        "drupal/webform": "^6.0",
-        "drupal/workflow_notifications": "^3.0@beta"
+        "drupal/webform": "^6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true,

@@ -1,0 +1,51 @@
+uuid: c14b15b4-041a-4164-98c7-c06847902be3
+langcode: en
+status: true
+dependencies: {  }
+id: new_patch_created
+label: 'New patch created'
+events:
+  -
+    event_name: 'rules_entity_insert:node--patch'
+description: ''
+tags: {  }
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 6c3cecbb-760e-4a9b-976b-0939a17cc4d3
+  weight: 0
+  conditions:
+    id: rules_and
+    uuid: 034a46d2-e819-455d-b2f4-e0a0fa820e8b
+    weight: 0
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: 42606514-d747-4613-840d-323543bcaddb
+    weight: 0
+    actions:
+      -
+        id: rules_action
+        uuid: 93a12d7d-f1cd-451e-85ca-edc0ac9e69c6
+        weight: 0
+        action_id: rules_send_email
+        context_values:
+          to:
+            - ali@alimartin.com
+          subject: 'New patch file submitted'
+          message: 'New patch file submitted'
+          reply: ''
+          language: ''
+        context_mapping: {  }
+        context_processors:
+          to:
+            rules_tokens: {  }
+          subject:
+            rules_tokens: {  }
+          message:
+            rules_tokens: {  }
+          reply:
+            rules_tokens: {  }
+          language:
+            rules_tokens: {  }
+        provides_mapping: {  }
