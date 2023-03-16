@@ -19,6 +19,7 @@
         "drupal/admin_toolbar": "^3.0",
         "drupal/backup_migrate": "^5.0@RC",
         "drupal/better_exposed_filters": "^5.0",
+        "drupal/bootstrap5": "^3.0",
         "drupal/captcha": "^1.2",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
