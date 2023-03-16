@@ -1,0 +1,17 @@
+uuid: d04ef350-ea2a-48bc-80c5-1226bd9dba10
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Patch
+type: patch
+description: 'Add a <em>Zoom B6 patch</em> to the website.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

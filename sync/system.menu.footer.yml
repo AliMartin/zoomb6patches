@@ -1,0 +1,10 @@
+uuid: 5bd3e0c9-d924-41fb-8d9b-e71542548de7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: Footer
+description: 'Site information links'
+locked: true

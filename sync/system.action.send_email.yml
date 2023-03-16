@@ -1,0 +1,12 @@
+uuid: 2270d8a6-5dc4-47bc-8678-6ccd7e69fd46
+langcode: en
+status: true
+dependencies: {  }
+id: send_email
+label: 'Send email'
+type: system
+plugin: action_send_email_action
+configuration:
+  recipient: info@alimartin.com
+  subject: 'New patch uploaded'
+  message: ''

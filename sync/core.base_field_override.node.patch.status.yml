@@ -1,0 +1,22 @@
+uuid: ed44457f-8808-4ce4-b354-0c92674f54db
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.patch
+id: node.patch.status
+field_name: status
+entity_type: node
+bundle: patch
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
