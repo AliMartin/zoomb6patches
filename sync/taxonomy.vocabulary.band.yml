@@ -1,0 +1,8 @@
+uuid: 008f1ca3-1449-4c9a-b271-e12606026bce
+langcode: en
+status: true
+dependencies: {  }
+name: Band
+vid: band
+description: ''
+weight: 0

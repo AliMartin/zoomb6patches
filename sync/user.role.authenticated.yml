@@ -7,8 +7,10 @@ dependencies:
   module:
     - comment
     - contact
+    - download_count
     - filter
     - media
+    - pfdp
     - search
     - shortcut
     - system
@@ -28,3 +30,5 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view media'
+  - 'bypass pfdp'
+  - 'view download counts'

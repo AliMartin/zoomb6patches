@@ -1,0 +1,29 @@
+uuid: ebcced5e-70a9-4b0a-bfde-fed7341fd455
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_song
+    - node.type.patch
+    - taxonomy.vocabulary.song
+id: node.patch.field_song
+field_name: field_song
+entity_type: node
+bundle: patch
+label: Song
+description: 'What song does this sound like?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      song: song
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

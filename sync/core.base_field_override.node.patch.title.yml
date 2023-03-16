@@ -1,0 +1,18 @@
+uuid: 25317bcf-77bf-43cf-bd41-9293a403e953
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.patch
+id: node.patch.title
+field_name: title
+entity_type: node
+bundle: patch
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

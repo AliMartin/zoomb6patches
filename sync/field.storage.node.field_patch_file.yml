@@ -1,4 +1,4 @@
-uuid: 8799c626-ccf9-4b5c-bf95-2f95e2b18ab8
+uuid: c2f2ffbc-dc65-447e-ba49-1553114d575f
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ settings:
   target_type: file
   display_field: false
   display_default: false
-  uri_scheme: public
+  uri_scheme: private
 module: file
 locked: false
 cardinality: 1

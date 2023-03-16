@@ -3,36 +3,71 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.patch.body
+    - field.field.node.patch.field_band
+    - field.field.node.patch.field_bassist
+    - field.field.node.patch.field_description
     - field.field.node.patch.field_patch_file
+    - field.field.node.patch.field_song
+    - field.field.node.patch.field_style
     - node.type.patch
   module:
-    - file
-    - text
+    - download_count
     - user
 id: node.patch.default
 targetEntityType: node
 bundle: patch
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
+  field_band:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_bassist:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: basic_string
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 5
     region: content
   field_patch_file:
-    type: file_default
+    type: FieldDownloadCount
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 102
+    weight: 0
+    region: content
+  field_song:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_style:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 6
     region: content
 hidden: {  }

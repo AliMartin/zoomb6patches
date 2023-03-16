@@ -1,4 +1,4 @@
-uuid: 54ac0961-5e6b-405f-8e0e-39de6d89acd5
+uuid: 6632dfa5-fa85-4466-87f0-b9ffec11fedc
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ field_name: field_patch_file
 entity_type: node
 bundle: patch
 label: 'Patch file'
-description: ''
+description: 'Upload your patch file.'
 required: true
 translatable: false
 default_value: {  }
@@ -22,6 +22,6 @@ settings:
   handler_settings: {  }
   file_directory: 'patches/[date:custom:Y]-[date:custom:m]'
   file_extensions: zptc
-  max_filesize: ''
+  max_filesize: '2 KB'
   description_field: false
 field_type: file

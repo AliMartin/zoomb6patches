@@ -4,29 +4,29 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.patch.body
+    - field.field.node.patch.field_band
+    - field.field.node.patch.field_bassist
+    - field.field.node.patch.field_description
     - field.field.node.patch.field_patch_file
+    - field.field.node.patch.field_song
+    - field.field.node.patch.field_style
     - node.type.patch
   module:
-    - text
     - user
 id: node.patch.teaser
 targetEntityType: node
 bundle: patch
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 101
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
+  field_band: true
+  field_bassist: true
+  field_description: true
   field_patch_file: true
+  field_song: true
+  field_style: true

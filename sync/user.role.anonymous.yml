@@ -7,8 +7,10 @@ dependencies:
   module:
     - comment
     - contact
+    - download_count
     - filter
     - media
+    - pfdp
     - search
     - system
 _core:
@@ -24,3 +26,5 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'
+  - 'bypass pfdp'
+  - 'view download counts'
