@@ -1,0 +1,27 @@
+uuid: 7f816212-0669-4ef6-a9a0-4db7d22ca666
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - zoom
+_core:
+  default_config_hash: opUWxR0Ob6xLl8c81UR3dth73CQTmlyZOxBwUKHxvtQ
+id: zoom_main_navigation
+theme: zoom
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

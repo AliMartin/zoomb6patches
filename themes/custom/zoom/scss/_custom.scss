@@ -1,0 +1,84 @@
+body {
+  background-color: $light;
+}
+
+
+header {
+  background-image: url("../images/carbonfibre.jpg");
+  color: $white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  .navbar-brand a.site-title {
+    color: $white;
+    &:hover,
+    &:focus {
+     color: $white; 
+    }
+  }
+}
+
+
+nav {
+  ul.navbar-nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+
+    li {
+
+      a {
+        padding: 0 !important;
+        margin: 0;
+        color: $white;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+        &:hover,
+        &:focus {
+          color: $blue;
+        }
+    
+        &:active,
+        &.is-active {
+          color: $red !important;
+        }
+      }    
+    }
+  }
+}
+
+main {
+  padding-bottom: 9rem;
+}
+
+footer {
+  background-color: $gray-900;
+  color: $white;
+}
+
+
+.view-patch-library {
+  .view-filters {
+    margin-bottom: 3rem;
+  }
+
+  .view-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .views-row {
+      border-radius: 6px;
+      padding: 1rem;
+      background-color: $white;
+      border: 1px solid $gray-300;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  }
+}

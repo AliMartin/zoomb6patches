@@ -1,0 +1,27 @@
+uuid: 583056be-372b-4858-9c91-b79a6142aef4
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - zoom
+_core:
+  default_config_hash: WSysmFMJyTTl75BKoNJZTO38s5JEcEuqtDJPzmsYEBk
+id: zoom_footer
+theme: zoom
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

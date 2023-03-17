@@ -1,0 +1,22 @@
+uuid: e7a020d4-57d5-4832-8313-0cde298369d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zoom
+_core:
+  default_config_hash: P9QEVIqWpuqyw7zdVjJMldWRUcEoGS_z5g1b8erUo20
+id: zoom_content
+theme: zoom
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

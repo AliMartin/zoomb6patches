@@ -1,0 +1,25 @@
+uuid: 7bf9389c-2faf-46f8-8ae5-50e83acc15e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zoom
+_core:
+  default_config_hash: 4rSOky8Z18SePj9Nekb6GhcgkG031ktXFiKYkDL6niQ
+id: zoom_branding
+theme: zoom
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

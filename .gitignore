@@ -64,3 +64,4 @@
 !/libraries/jqueryinstagramfeed/*
 !/libraries/slick/*
 !/sites/default/settings.local.php
+*.zptc

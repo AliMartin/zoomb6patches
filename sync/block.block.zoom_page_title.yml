@@ -1,0 +1,20 @@
+uuid: 546ef661-03c4-40b3-85e8-d4b43c72c97d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - zoom
+_core:
+  default_config_hash: RGw-SpB_2nBJVZNW4y3Rmch5naBCJ2JmMfkNxvUIt6s
+id: zoom_page_title
+theme: zoom
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

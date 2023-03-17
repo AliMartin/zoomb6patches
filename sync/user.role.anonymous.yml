@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - node.type.patch
   module:
     - comment
     - contact
     - download_count
     - filter
     - media
+    - node
     - pfdp
     - search
     - system
@@ -28,3 +30,4 @@ permissions:
   - 'view media'
   - 'bypass pfdp'
   - 'view download counts'
+  - 'create patch content'

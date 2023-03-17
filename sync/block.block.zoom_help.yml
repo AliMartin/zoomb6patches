@@ -1,0 +1,22 @@
+uuid: d7a7a762-07b6-48bb-8de6-e734fa0b2abb
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - zoom
+_core:
+  default_config_hash: D5ROQpUwU6ba-rzrAbqSNZP4ApV0Unaom-qcfv2Om48
+id: zoom_help
+theme: zoom
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

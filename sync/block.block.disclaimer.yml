@@ -1,0 +1,25 @@
+uuid: c7539433-8033-4189-9d47-8fd87523f6b0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:de8c6b44-360e-48ca-8754-38b44ee22fa2'
+  module:
+    - block_content
+  theme:
+    - zoom
+id: disclaimer
+theme: zoom
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:de8c6b44-360e-48ca-8754-38b44ee22fa2'
+settings:
+  id: 'block_content:de8c6b44-360e-48ca-8754-38b44ee22fa2'
+  label: Disclaimer
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

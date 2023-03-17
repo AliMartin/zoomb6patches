@@ -7,6 +7,9 @@ dependencies:
     - node.type.patch
     - system.menu.main
     - taxonomy.vocabulary.band
+    - taxonomy.vocabulary.bassist
+    - taxonomy.vocabulary.song
+    - taxonomy.vocabulary.style
   module:
     - better_exposed_filters
     - download_count
@@ -255,7 +258,7 @@ display:
           exposed: true
           expose:
             operator_id: field_band_target_id_op
-            label: 'Band (field_band)'
+            label: Band
             description: ''
             use_operator: false
             operator: field_band_target_id_op
@@ -289,8 +292,156 @@ display:
           hierarchy: false
           limit: true
           error_message: true
+        field_song_target_id:
+          id: field_song_target_id
+          table: node__field_song
+          field: field_song_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_song_target_id_op
+            label: Song
+            description: ''
+            use_operator: false
+            operator: field_song_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_song_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: song
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_bassist_target_id:
+          id: field_bassist_target_id
+          table: node__field_bassist
+          field: field_bassist_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_bassist_target_id_op
+            label: Bassist
+            description: ''
+            use_operator: false
+            operator: field_bassist_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_bassist_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: bassist
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_style_target_id:
+          id: field_style_target_id
+          table: node__field_style
+          field: field_style_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_style_target_id_op
+            label: Style
+            description: ''
+            use_operator: false
+            operator: field_style_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_style_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: style
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
       query:
@@ -302,6 +453,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }

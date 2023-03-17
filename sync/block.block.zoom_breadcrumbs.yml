@@ -1,0 +1,22 @@
+uuid: 7c5c16b1-3f49-42be-8f6e-1b446b3f2920
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - zoom
+_core:
+  default_config_hash: MzoRck2gqd1OFH1aDvQd4Y0niR4MafjTBKGsgl9jVPo
+id: zoom_breadcrumbs
+theme: zoom
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

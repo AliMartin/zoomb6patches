@@ -1,0 +1,22 @@
+uuid: 3758f8fd-48d8-4647-80e3-69e8d04dd1c9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - zoom
+_core:
+  default_config_hash: kR2Tc-hs8Q1sLnx-vqD5ztRgIdnXBNJOCbciePTTMoc
+id: zoom_local_tasks
+theme: zoom
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

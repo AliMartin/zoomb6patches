@@ -1,0 +1,20 @@
+uuid: d214a211-3c2c-40fb-a1e6-e11b3bc7dc09
+langcode: en
+status: true
+dependencies:
+  theme:
+    - zoom
+_core:
+  default_config_hash: nPraZPhdem8LBdWsobwxidQGdXZNes8DQZzBA-fJClY
+id: zoom_local_actions
+theme: zoom
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
