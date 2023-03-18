@@ -79,6 +79,40 @@ footer {
       background-color: $white;
       border: 1px solid $gray-300;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+      .views-field-title {
+        text-transform: uppercase;
+        font-size: x-large;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .views-field-field-description {
+        margin-bottom: 10px;
+      }
+
+      .views-field-field-band,
+      .views-field-field-song,
+      .views-field-field-bassist,
+      .views-field-field-style,
+      .views-field-field-effects-used {
+        display: flex;
+        gap: 10px;
+        text-transform: uppercase;
+        font-size: smaller;
+
+        .views-label {
+          font-weight: 700;
+        }
+
+        .field-content {
+          color: $gray-600;
+        }
+      }
+
+      .views-field-field-effects-used {
+        margin-bottom: 10px;
+      }
     }
   }
 }

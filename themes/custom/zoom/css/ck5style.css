@@ -11112,5 +11112,41 @@ a > .ck-content code {
   border: 1px solid #ddd;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
+.ck-content .view-patch-library .view-content .views-row .views-field-title {
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.ck-content .view-patch-library .view-content .views-row .views-field-field-description {
+  margin-bottom: 10px;
+}
+.ck-content .view-patch-library .view-content .views-row .views-field-field-band,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-song,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-bassist,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-style,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used {
+  display: flex;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: smaller;
+}
+.ck-content .view-patch-library .view-content .views-row .views-field-field-band .views-label,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-song .views-label,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-bassist .views-label,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-style .views-label,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used .views-label {
+  font-weight: 700;
+}
+.ck-content .view-patch-library .view-content .views-row .views-field-field-band .field-content,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-song .field-content,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-bassist .field-content,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-style .field-content,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used .field-content {
+  color: #868e96;
+}
+.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used {
+  margin-bottom: 10px;
+}
 
 /*# sourceMappingURL=ck5style.css.map */

@@ -11943,5 +11943,41 @@ footer {
   border: 1px solid #ddd;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
+.view-patch-library .view-content .views-row .views-field-title {
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.view-patch-library .view-content .views-row .views-field-field-description {
+  margin-bottom: 10px;
+}
+.view-patch-library .view-content .views-row .views-field-field-band,
+.view-patch-library .view-content .views-row .views-field-field-song,
+.view-patch-library .view-content .views-row .views-field-field-bassist,
+.view-patch-library .view-content .views-row .views-field-field-style,
+.view-patch-library .view-content .views-row .views-field-field-effects-used {
+  display: flex;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: smaller;
+}
+.view-patch-library .view-content .views-row .views-field-field-band .views-label,
+.view-patch-library .view-content .views-row .views-field-field-song .views-label,
+.view-patch-library .view-content .views-row .views-field-field-bassist .views-label,
+.view-patch-library .view-content .views-row .views-field-field-style .views-label,
+.view-patch-library .view-content .views-row .views-field-field-effects-used .views-label {
+  font-weight: 700;
+}
+.view-patch-library .view-content .views-row .views-field-field-band .field-content,
+.view-patch-library .view-content .views-row .views-field-field-song .field-content,
+.view-patch-library .view-content .views-row .views-field-field-bassist .field-content,
+.view-patch-library .view-content .views-row .views-field-field-style .field-content,
+.view-patch-library .view-content .views-row .views-field-field-effects-used .field-content {
+  color: #868e96;
+}
+.view-patch-library .view-content .views-row .views-field-field-effects-used {
+  margin-bottom: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */

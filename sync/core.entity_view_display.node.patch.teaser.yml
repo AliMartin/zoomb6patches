@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.patch.field_band
     - field.field.node.patch.field_bassist
     - field.field.node.patch.field_description
+    - field.field.node.patch.field_effects_used
     - field.field.node.patch.field_patch_file
     - field.field.node.patch.field_song
     - field.field.node.patch.field_style
@@ -27,6 +28,7 @@ hidden:
   field_band: true
   field_bassist: true
   field_description: true
+  field_effects_used: true
   field_patch_file: true
   field_song: true
   field_style: true

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.patch.field_band
     - field.field.node.patch.field_bassist
     - field.field.node.patch.field_description
+    - field.field.node.patch.field_effects_used
     - field.field.node.patch.field_patch_file
     - field.field.node.patch.field_song
     - field.field.node.patch.field_style
@@ -40,6 +41,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 5
+    region: content
+  field_effects_used:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_patch_file:
     type: FieldDownloadCount

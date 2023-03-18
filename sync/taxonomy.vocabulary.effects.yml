@@ -1,0 +1,8 @@
+uuid: 8dcf8a93-5af9-48ad-a010-780e5ea3db23
+langcode: en
+status: true
+dependencies: {  }
+name: Effects
+vid: effects
+description: ''
+weight: 0
