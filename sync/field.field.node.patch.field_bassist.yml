@@ -11,7 +11,7 @@ field_name: field_bassist
 entity_type: node
 bundle: patch
 label: Bassist
-description: 'What bassist does this sound like?'
+description: 'What bassist does this patch sound like?'
 required: false
 translatable: false
 default_value: {  }

@@ -8,5 +8,8 @@
 // Include bootstrap.
 @import '../../../../themes/contrib/bootstrap5/scss/style';
 
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
 @import 'bootswatch';
 @import 'custom';

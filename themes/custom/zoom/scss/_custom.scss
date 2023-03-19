@@ -60,12 +60,37 @@ main {
 footer {
   background-color: $gray-900;
   color: $white;
+
+  p {
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    font-size: small;
+  }
 }
 
 
 .view-patch-library {
   .view-filters {
+    margin-top: 3rem;
     margin-bottom: 3rem;
+
+    label {
+      font-weight: 900;
+    }
+  }
+
+  form.views-exposed-form .form--inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .form-item {
+      margin: 0;
+    }
+
+    #edit-actions {
+      margin-top: 30px;
+    }
   }
 
   .view-content {
@@ -83,7 +108,7 @@ footer {
       .views-field-title {
         text-transform: uppercase;
         font-size: x-large;
-        font-weight: 700;
+        font-weight: 900;
         margin-bottom: 10px;
       }
 
@@ -95,14 +120,16 @@ footer {
       .views-field-field-song,
       .views-field-field-bassist,
       .views-field-field-style,
-      .views-field-field-effects-used {
+      .views-field-field-effects-used,
+      .views-field-field-patch-file {
         display: flex;
+        align-items: center;
         gap: 10px;
         text-transform: uppercase;
         font-size: smaller;
 
         .views-label {
-          font-weight: 700;
+          font-weight: 600;
         }
 
         .field-content {
@@ -112,6 +139,163 @@ footer {
 
       .views-field-field-effects-used {
         margin-bottom: 10px;
+      }
+
+      .views-field-field-patch-file {
+        .file--general {
+          background-image: inherit;
+          padding-left: inherit;
+
+          a {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 20px;
+            background-color: $blue;
+            color: $white;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+              background-color: $red;
+            }
+          }
+        }
+
+        .download-count {
+          text-transform: uppercase;
+          font-size: smaller;
+          color: $gray-600;
+        }
+      }
+    }
+  }
+}
+
+
+body.path-node {
+  h1 {
+    text-align: center;
+  }
+}
+
+#block-zoom-help {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+form#node-patch-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  > div {
+    border: 1px solid $gray-300;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  > div#edit-langcode-wrapper,
+  > div.js-form-type-vertical-tabs,
+  > div#edit-actions {
+    border: inherit;
+    padding: 0;
+  }
+
+  .form-item {
+    margin: 0;
+  }
+
+  .form-item > label {
+    font-weight: 900;
+  }
+
+  .form-item.form-type-checkbox > label {
+    font-weight: 300;
+  }
+
+  .form-checkboxes {
+    columns: 2;
+  }
+
+  .description {
+    margin-top: 5px;
+    font-weight: 600;
+  }
+}
+
+
+
+@media (max-width:991px) {
+
+  .region-nav-branding {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .region-nav-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+
+  h1 {
+    text-align: center;
+  }
+
+  .view-patch-library {
+
+    form.views-exposed-form .form--inline {
+      justify-content: center;
+    }
+
+    .view-content {
+      .views-row {
+        text-align: center;
+
+        .views-field-field-description,
+        .views-field-field-band,
+        .views-field-field-song,
+        .views-field-field-bassist,
+        .views-field-field-style,
+        .views-field-field-effects-used,
+        .views-field-field-patch-file {
+          flex-direction: column;
+          justify-content: center;
+          gap: 0;
+          margin-bottom: 10px;
+        }
+
+        .views-field-field-patch-file {
+          .views-label {
+            display: block;
+            margin-bottom: 5px;
+          }
+          .field-content {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+        }
+
       }
     }
   }

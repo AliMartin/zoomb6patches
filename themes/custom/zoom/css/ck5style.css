@@ -32,6 +32,7 @@
   } */
   /* rtl:begin:remove */
   /* rtl:end:remove */
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
 }
 .ck-content :root {
   --bs-blue: #4582ec;
@@ -77,7 +78,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 52, 58, 64;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -133,7 +134,7 @@
 .ck-content h6, .ck-content .h6, .ck-content h5, .ck-content .h5, .ck-content h4, .ck-content .h4, .ck-content h3, .ck-content .h3, .ck-content h2, .ck-content .h2, .ck-content h1, .ck-content .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.2;
 }
 .ck-content h1, .ck-content .h1 {
@@ -2594,7 +2595,7 @@ a > .ck-content code {
 .ck-content .btn, .ck-content .node-preview-container .node-preview-backlink, .ck-content a.button, .ck-content .button, .ck-content button.link {
   --bs-btn-padding-x: 1.1rem;
   --bs-btn-padding-y: 0.5rem;
-  --bs-btn-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-btn-font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-btn-font-size: 0.875rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
@@ -10988,7 +10989,7 @@ a > .ck-content code {
   font-size: 0.9625rem;
 }
 .ck-content .lead {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #868e96;
 }
 .ck-content table,
@@ -11009,7 +11010,7 @@ a > .ck-content code {
 }
 .ck-content .alert,
 .ck-content .alert p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .ck-content .alert a,
 .ck-content .alert .alert-link {
@@ -11097,8 +11098,28 @@ a > .ck-content code {
   background-color: #212529;
   color: #fff;
 }
+.ck-content footer p {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-size: small;
+}
 .ck-content .view-patch-library .view-filters {
+  margin-top: 3rem;
   margin-bottom: 3rem;
+}
+.ck-content .view-patch-library .view-filters label {
+  font-weight: 900;
+}
+.ck-content .view-patch-library form.views-exposed-form .form--inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ck-content .view-patch-library form.views-exposed-form .form--inline .form-item {
+  margin: 0;
+}
+.ck-content .view-patch-library form.views-exposed-form .form--inline #edit-actions {
+  margin-top: 30px;
 }
 .ck-content .view-patch-library .view-content {
   display: flex;
@@ -11115,7 +11136,7 @@ a > .ck-content code {
 .ck-content .view-patch-library .view-content .views-row .views-field-title {
   text-transform: uppercase;
   font-size: x-large;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 10px;
 }
 .ck-content .view-patch-library .view-content .views-row .views-field-field-description {
@@ -11125,8 +11146,10 @@ a > .ck-content code {
 .ck-content .view-patch-library .view-content .views-row .views-field-field-song,
 .ck-content .view-patch-library .view-content .views-row .views-field-field-bassist,
 .ck-content .view-patch-library .view-content .views-row .views-field-field-style,
-.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used {
+.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file {
   display: flex;
+  align-items: center;
   gap: 10px;
   text-transform: uppercase;
   font-size: smaller;
@@ -11135,18 +11158,136 @@ a > .ck-content code {
 .ck-content .view-patch-library .view-content .views-row .views-field-field-song .views-label,
 .ck-content .view-patch-library .view-content .views-row .views-field-field-bassist .views-label,
 .ck-content .view-patch-library .view-content .views-row .views-field-field-style .views-label,
-.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used .views-label {
-  font-weight: 700;
+.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used .views-label,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file .views-label {
+  font-weight: 600;
 }
 .ck-content .view-patch-library .view-content .views-row .views-field-field-band .field-content,
 .ck-content .view-patch-library .view-content .views-row .views-field-field-song .field-content,
 .ck-content .view-patch-library .view-content .views-row .views-field-field-bassist .field-content,
 .ck-content .view-patch-library .view-content .views-row .views-field-field-style .field-content,
-.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used .field-content {
+.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used .field-content,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file .field-content {
   color: #868e96;
 }
 .ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used {
   margin-bottom: 10px;
+}
+.ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file .file--general {
+  background-image: inherit;
+  padding-left: inherit;
+}
+.ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file .file--general a {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  background-color: #4582ec;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file .file--general a:hover, .ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file .file--general a:focus {
+  background-color: #d9534f;
+}
+.ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file .download-count {
+  text-transform: uppercase;
+  font-size: smaller;
+  color: #868e96;
+}
+.ck-content body.path-node h1, .ck-content body.path-node .h1 {
+  text-align: center;
+}
+.ck-content #block-zoom-help {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.ck-content form#node-patch-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ck-content form#node-patch-form > div {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.ck-content form#node-patch-form > div#edit-langcode-wrapper,
+.ck-content form#node-patch-form > div.js-form-type-vertical-tabs,
+.ck-content form#node-patch-form > div#edit-actions {
+  border: inherit;
+  padding: 0;
+}
+.ck-content form#node-patch-form .form-item {
+  margin: 0;
+}
+.ck-content form#node-patch-form .form-item > label {
+  font-weight: 900;
+}
+.ck-content form#node-patch-form .form-item.form-type-checkbox > label {
+  font-weight: 300;
+}
+.ck-content form#node-patch-form .form-checkboxes {
+  columns: 2;
+}
+.ck-content form#node-patch-form .description {
+  margin-top: 5px;
+  font-weight: 600;
+}
+@media (max-width: 991px) {
+  .ck-content .region-nav-branding {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .ck-content .region-nav-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .ck-content ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .ck-content footer {
+    text-align: center;
+  }
+  .ck-content h1, .ck-content .h1 {
+    text-align: center;
+  }
+  .ck-content .view-patch-library form.views-exposed-form .form--inline {
+    justify-content: center;
+  }
+  .ck-content .view-patch-library .view-content .views-row {
+    text-align: center;
+  }
+  .ck-content .view-patch-library .view-content .views-row .views-field-field-description,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-band,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-song,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-bassist,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-style,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-effects-used,
+.ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 10px;
+  }
+  .ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file .views-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .ck-content .view-patch-library .view-content .views-row .views-field-field-patch-file .field-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 /*# sourceMappingURL=ck5style.css.map */

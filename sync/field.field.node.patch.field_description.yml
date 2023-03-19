@@ -10,7 +10,7 @@ field_name: field_description
 entity_type: node
 bundle: patch
 label: Description
-description: ''
+description: 'Tell everyone a bit about your patch file.'
 required: false
 translatable: false
 default_value: {  }

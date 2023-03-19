@@ -11,7 +11,7 @@ field_name: field_song
 entity_type: node
 bundle: patch
 label: Song
-description: 'What song does this sound like?'
+description: 'What song does this patch sound like?'
 required: false
 translatable: false
 default_value: {  }

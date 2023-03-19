@@ -5,6 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
 :root {
   --bs-blue: #4582ec;
   --bs-indigo: #6610f2;
@@ -49,7 +50,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 52, 58, 64;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -110,7 +111,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.2;
 }
 
@@ -2770,7 +2771,7 @@ textarea.form-control-lg {
 .btn, .node-preview-container .node-preview-backlink, a.button, .button, button.link {
   --bs-btn-padding-x: 1.1rem;
   --bs-btn-padding-y: 0.5rem;
-  --bs-btn-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-btn-font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-btn-font-size: 0.875rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
@@ -11807,7 +11808,7 @@ footer {
 }
 
 .lead {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #868e96;
 }
 
@@ -11832,7 +11833,7 @@ table,
 }
 .alert,
 .alert p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .alert a,
 .alert .alert-link {
@@ -11927,9 +11928,29 @@ footer {
   background-color: #212529;
   color: #fff;
 }
+footer p {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-size: small;
+}
 
 .view-patch-library .view-filters {
+  margin-top: 3rem;
   margin-bottom: 3rem;
+}
+.view-patch-library .view-filters label {
+  font-weight: 900;
+}
+.view-patch-library form.views-exposed-form .form--inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.view-patch-library form.views-exposed-form .form--inline .form-item {
+  margin: 0;
+}
+.view-patch-library form.views-exposed-form .form--inline #edit-actions {
+  margin-top: 30px;
 }
 .view-patch-library .view-content {
   display: flex;
@@ -11946,7 +11967,7 @@ footer {
 .view-patch-library .view-content .views-row .views-field-title {
   text-transform: uppercase;
   font-size: x-large;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 10px;
 }
 .view-patch-library .view-content .views-row .views-field-field-description {
@@ -11956,8 +11977,10 @@ footer {
 .view-patch-library .view-content .views-row .views-field-field-song,
 .view-patch-library .view-content .views-row .views-field-field-bassist,
 .view-patch-library .view-content .views-row .views-field-field-style,
-.view-patch-library .view-content .views-row .views-field-field-effects-used {
+.view-patch-library .view-content .views-row .views-field-field-effects-used,
+.view-patch-library .view-content .views-row .views-field-field-patch-file {
   display: flex;
+  align-items: center;
   gap: 10px;
   text-transform: uppercase;
   font-size: smaller;
@@ -11966,18 +11989,140 @@ footer {
 .view-patch-library .view-content .views-row .views-field-field-song .views-label,
 .view-patch-library .view-content .views-row .views-field-field-bassist .views-label,
 .view-patch-library .view-content .views-row .views-field-field-style .views-label,
-.view-patch-library .view-content .views-row .views-field-field-effects-used .views-label {
-  font-weight: 700;
+.view-patch-library .view-content .views-row .views-field-field-effects-used .views-label,
+.view-patch-library .view-content .views-row .views-field-field-patch-file .views-label {
+  font-weight: 600;
 }
 .view-patch-library .view-content .views-row .views-field-field-band .field-content,
 .view-patch-library .view-content .views-row .views-field-field-song .field-content,
 .view-patch-library .view-content .views-row .views-field-field-bassist .field-content,
 .view-patch-library .view-content .views-row .views-field-field-style .field-content,
-.view-patch-library .view-content .views-row .views-field-field-effects-used .field-content {
+.view-patch-library .view-content .views-row .views-field-field-effects-used .field-content,
+.view-patch-library .view-content .views-row .views-field-field-patch-file .field-content {
   color: #868e96;
 }
 .view-patch-library .view-content .views-row .views-field-field-effects-used {
   margin-bottom: 10px;
+}
+.view-patch-library .view-content .views-row .views-field-field-patch-file .file--general {
+  background-image: inherit;
+  padding-left: inherit;
+}
+.view-patch-library .view-content .views-row .views-field-field-patch-file .file--general a {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  background-color: #4582ec;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.view-patch-library .view-content .views-row .views-field-field-patch-file .file--general a:hover, .view-patch-library .view-content .views-row .views-field-field-patch-file .file--general a:focus {
+  background-color: #d9534f;
+}
+.view-patch-library .view-content .views-row .views-field-field-patch-file .download-count {
+  text-transform: uppercase;
+  font-size: smaller;
+  color: #868e96;
+}
+
+body.path-node h1, body.path-node .h1 {
+  text-align: center;
+}
+
+#block-zoom-help {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+form#node-patch-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form#node-patch-form > div {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+form#node-patch-form > div#edit-langcode-wrapper,
+form#node-patch-form > div.js-form-type-vertical-tabs,
+form#node-patch-form > div#edit-actions {
+  border: inherit;
+  padding: 0;
+}
+form#node-patch-form .form-item {
+  margin: 0;
+}
+form#node-patch-form .form-item > label {
+  font-weight: 900;
+}
+form#node-patch-form .form-item.form-type-checkbox > label {
+  font-weight: 300;
+}
+form#node-patch-form .form-checkboxes {
+  columns: 2;
+}
+form#node-patch-form .description {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .region-nav-branding {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .region-nav-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  footer {
+    text-align: center;
+  }
+  h1, .h1 {
+    text-align: center;
+  }
+  .view-patch-library form.views-exposed-form .form--inline {
+    justify-content: center;
+  }
+  .view-patch-library .view-content .views-row {
+    text-align: center;
+  }
+  .view-patch-library .view-content .views-row .views-field-field-description,
+.view-patch-library .view-content .views-row .views-field-field-band,
+.view-patch-library .view-content .views-row .views-field-field-song,
+.view-patch-library .view-content .views-row .views-field-field-bassist,
+.view-patch-library .view-content .views-row .views-field-field-style,
+.view-patch-library .view-content .views-row .views-field-field-effects-used,
+.view-patch-library .view-content .views-row .views-field-field-patch-file {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 10px;
+  }
+  .view-patch-library .view-content .views-row .views-field-field-patch-file .views-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .view-patch-library .view-content .views-row .views-field-field-patch-file .field-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
