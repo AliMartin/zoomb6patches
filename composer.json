@@ -27,7 +27,7 @@
         "drupal/core-vendor-hardening": "^9.1",
         "drupal/ctools": "^3.6",
         "drupal/download_count": "^2.0",
-        "drupal/honeypot": "^2.0",
+        "drupal/honeypot": "^2.1",
         "drupal/httpswww": "^2.1",
         "drupal/pathauto": "^1.8",
         "drupal/private_files_download_permission": "^3.0",

@@ -11,7 +11,7 @@ third_party_settings:
 name: Patch
 type: patch
 description: 'Add a <em>Zoom B6 patch</em> to the website.'
-help: 'Upload your patch file and give as much information as possible about it as this will help other people find it.'
+help: 'Upload your patch file and give as much information as possible about it as this will help other people find it. New patches are manually reviewed first before being published so please allow a short period of time for this to happen.'
 new_revision: false
 preview_mode: 0
 display_submitted: false
