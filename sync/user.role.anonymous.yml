@@ -6,7 +6,6 @@ dependencies:
     - filter.format.restricted_html
     - node.type.patch
   module:
-    - comment
     - contact
     - download_count
     - filter
@@ -22,12 +21,11 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'bypass pfdp'
+  - 'create patch content'
   - 'search content'
   - 'use text format restricted_html'
-  - 'view media'
-  - 'bypass pfdp'
   - 'view download counts'
-  - 'create patch content'
+  - 'view media'

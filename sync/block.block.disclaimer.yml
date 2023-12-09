@@ -1,9 +1,9 @@
-uuid: c7539433-8033-4189-9d47-8fd87523f6b0
+uuid: 7327a59f-1e96-4299-9919-7d17dd217a2c
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:de8c6b44-360e-48ca-8754-38b44ee22fa2'
+    - 'block_content:basic:a33fefc4-d86a-4700-b6be-b3b5d029c2d6'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: zoom
 region: footer
 weight: 0
 provider: null
-plugin: 'block_content:de8c6b44-360e-48ca-8754-38b44ee22fa2'
+plugin: 'block_content:a33fefc4-d86a-4700-b6be-b3b5d029c2d6'
 settings:
-  id: 'block_content:de8c6b44-360e-48ca-8754-38b44ee22fa2'
+  id: 'block_content:a33fefc4-d86a-4700-b6be-b3b5d029c2d6'
   label: Disclaimer
   label_display: '0'
   provider: block_content
