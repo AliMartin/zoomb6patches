@@ -35,6 +35,7 @@
         "drupal/responsive_menu": "^4.4",
         "drupal/rules": "3.x-dev@dev",
         "drupal/token": "^1.9",
+        "drupal/typed_data": "^1.0@beta",
         "drupal/upgrade_status": "^4.0",
         "drupal/webform": "^6.0"
     },

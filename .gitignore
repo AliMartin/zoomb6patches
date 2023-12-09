@@ -30,7 +30,7 @@
 # Ignore drupal core (if not versioning drupal sources)
 /core
 /libraries
-/modules/*
+/modules/contrib/*
 /themes/README.txt
 /themes/contrib/*
 /profiles/README.txt
